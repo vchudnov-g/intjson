@@ -11,8 +11,6 @@ import (
 
 
 func main() {
-	fmt.Printf("here we are!\n")
-
 	messages := []*intjson.Numbers{
 		&intjson.Numbers{
 			Label: "small numbers",
@@ -25,8 +23,8 @@ func main() {
 			Label: "large numbers",
 			Signed64: -1<<60,
 			Unsigned64: 1<<60,
-			Signed32: -2<<30,
-			Unsigned32: 2<<30,
+			Signed32: -1<<30,
+			Unsigned32: 1<<30,
 		},
 	}
 

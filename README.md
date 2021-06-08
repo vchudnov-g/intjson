@@ -9,9 +9,9 @@ Run `proto/generate.sh` to generate the protobuf stubs for your language. Then g
 
 ## Results
 
-### Go
+### Working as expected:
 
-**Works as expected.**
+**Go, Python**
 
 * `int32` and `uint32` are JSON encoded as numbers, regardless of magnitude
 * `int64` and `uint64` are JSON encoded as strings, regardless of magnitude
@@ -21,5 +21,5 @@ Run `proto/generate.sh` to generate the protobuf stubs for your language. Then g
 1. Add instructions to `proto/generate.sh` to generate the proto stubs for your language
 2. Make a top-level directory for your language.
 3. Create a small program that will populate all fields with small and large values. See the `go/main.go` implementation for an example.
-4. Add ther results of your investigation above.
+4. Add the results of your investigation above.
 5. Commit your new source files and the generated proto stubs.
