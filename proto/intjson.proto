@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package intjson;
+
+option go_package ="proto/intjson";
+
+message Numbers {
+  string label = 1;
+  int64 signed64 = 2;
+  uint64 unsigned64 = 3;
+  int32 signed32 = 4;
+  uint32 unsigned32 = 5;
+}
