@@ -16,8 +16,8 @@ Run `proto/generate.sh` to generate the protobuf stubs for your language. Then g
 
 #### By language
 
- - Go: PASSED (tested here)
- - Python: PASSED (tested heree)
+ - Go: PASSED (tested here: `go run main.go`)
+ - Python: PASSED (tested here: `python3 main.py`)
  - PHP: PASSED (tested [separately](https://github.com/googleapis/gapic-generator-php/pull/304))
  
 
