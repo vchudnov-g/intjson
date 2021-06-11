@@ -11,10 +11,17 @@ Run `proto/generate.sh` to generate the protobuf stubs for your language. Then g
 
 ### Working as expected:
 
-**Go, Python**
-
 * `int32` and `uint32` are JSON encoded as numbers, regardless of magnitude
 * `int64` and `uint64` are JSON encoded as strings, regardless of magnitude
+
+#### By language
+
+ - Go: PASSED (tested here)
+ - Python: PASSED (tested heree)
+ - PHP: PASSED (tested [separately](https://github.com/googleapis/gapic-generator-php/pull/304))
+ 
+
+
 
 ## Contributing
 
