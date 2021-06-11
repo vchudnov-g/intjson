@@ -9,12 +9,12 @@ Run `proto/generate.sh` to generate the protobuf stubs for your language. Then g
 
 ## Results
 
-### Working as expected:
+### Expectation
 
 * `int32` and `uint32` are JSON encoded as numbers, regardless of magnitude
 * `int64` and `uint64` are JSON encoded as strings, regardless of magnitude
 
-#### By language
+### By language
 
  - Go: PASSED (tested here: `go run main.go`)
  - Python: PASSED (tested here: `python3 main.py`)
