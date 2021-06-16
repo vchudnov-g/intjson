@@ -5,16 +5,16 @@ This repo checks that (u)int64s are encoded correctly into JSON. As explained in
 
 ## Instructions
 
-Run `proto/generate.sh` to generate the protobuf stubs for your language. Then go to your language directory to run the code.
+Run `cd proto && ./generate.sh` to generate the protobuf stubs for your language. Then go to your language directory to run the code.
 
 ## Results
 
-### Working as expected:
+### Expectation
 
 * `int32` and `uint32` are JSON encoded as numbers, regardless of magnitude
 * `int64` and `uint64` are JSON encoded as strings, regardless of magnitude
 
-#### By language
+### By language
 
  - Go: PASSED (tested here: `go run main.go`)
  - Python: PASSED (tested here: `python3 main.py`)
