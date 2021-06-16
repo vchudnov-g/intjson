@@ -5,7 +5,7 @@ This repo checks that (u)int64s are encoded correctly into JSON. As explained in
 
 ## Instructions
 
-Run `proto/generate.sh` to generate the protobuf stubs for your language. Then go to your language directory to run the code.
+Run `cd proto && ./generate.sh` to generate the protobuf stubs for your language. Then go to your language directory to run the code.
 
 ## Results
 
@@ -19,8 +19,7 @@ Run `proto/generate.sh` to generate the protobuf stubs for your language. Then g
  - Go: PASSED (tested here: `go run main.go`)
  - Python: PASSED (tested here: `python3 main.py`)
  - PHP: PASSED (tested [separately](https://github.com/googleapis/gapic-generator-php/pull/304))
- 
-
+ - Java: PASSED (tested here: `mvn compile && mvn exec:java`)
 
 
 ## Contributing
