@@ -1,7 +1,6 @@
-package intjson;
-
 import com.google.protobuf.InvalidProtocolBufferException;
 import com.google.protobuf.util.JsonFormat;
+import intjson.Intjson;
 
 public class Main {
 
