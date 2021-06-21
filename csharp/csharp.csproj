@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+  </PropertyGroup>
+
+ <ItemGroup>
+    <PackageReference Include="Google.Api.Gax.Grpc.GrpcCore" Version="[3.3.0, 4.0.0)" />
+    <PackageReference Include="Grpc.Core" Version="[2.36.4, 3.0.0)" PrivateAssets="None" />
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.0" PrivateAssets="All" />
+  </ItemGroup>
+
+</Project>
