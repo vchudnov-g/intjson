@@ -1,0 +1,14 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "Test protobufjs int64 conversion",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main.js"
+  },
+  "author": "summer-ji-eng",
+  "license": "ISC",
+  "dependencies": {
+    "protobufjs": "^6.11.2"
+  }
+}
