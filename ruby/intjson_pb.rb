@@ -12,9 +12,23 @@ Google::Protobuf::DescriptorPool.generated_pool.build do
       optional :signed32, :int32, 4
       optional :unsigned32, :uint32, 5
     end
+    add_enum "intjson.Numbers.BeginningLetters" do
+      value :UNKNOWN, 0
+      value :ALPHA, 1
+      value :BETA, 2
+      value :GAMMA, 3
+    end
+    add_enum "intjson.EndingLetters" do
+      value :UNKNOWN, 0
+      value :OMEGA, 1
+      value :PSI, 2
+      value :CHI, 3
+    end
   end
 end
 
 module Intjson
   Numbers = ::Google::Protobuf::DescriptorPool.generated_pool.lookup("intjson.Numbers").msgclass
+  Numbers::BeginningLetters = ::Google::Protobuf::DescriptorPool.generated_pool.lookup("intjson.Numbers.BeginningLetters").enummodule
+  EndingLetters = ::Google::Protobuf::DescriptorPool.generated_pool.lookup("intjson.EndingLetters").enummodule
 end

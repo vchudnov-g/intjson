@@ -4,10 +4,24 @@ package intjson;
 
 option go_package ="proto/intjson";
 
+enum EndingLetters {
+  UNKNOWN = 0;
+  OMEGA = 1;
+  PSI = 2;
+  CHI = 3;
+}
+
 message Numbers {
   string label = 1;
   int64 signed64 = 2;
   uint64 unsigned64 = 3;
   int32 signed32 = 4;
   uint32 unsigned32 = 5;
+
+  enum BeginningLetters {
+    UNKNOWN = 0;
+    ALPHA = 1;
+    BETA = 2;
+    GAMMA = 3;
+  }
 }

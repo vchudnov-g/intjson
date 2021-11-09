@@ -24,19 +24,32 @@ namespace Intjson {
     static IntjsonReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "Cg1pbnRqc29uLnByb3RvEgdpbnRqc29uImQKB051bWJlcnMSDQoFbGFiZWwY",
-            "ASABKAkSEAoIc2lnbmVkNjQYAiABKAMSEgoKdW5zaWduZWQ2NBgDIAEoBBIQ",
-            "CghzaWduZWQzMhgEIAEoBRISCgp1bnNpZ25lZDMyGAUgASgNQg9aDXByb3Rv",
-            "L2ludGpzb25iBnByb3RvMw=="));
+            "Cg1pbnRqc29uLnByb3RvEgdpbnRqc29uIqUBCgdOdW1iZXJzEg0KBWxhYmVs",
+            "GAEgASgJEhAKCHNpZ25lZDY0GAIgASgDEhIKCnVuc2lnbmVkNjQYAyABKAQS",
+            "EAoIc2lnbmVkMzIYBCABKAUSEgoKdW5zaWduZWQzMhgFIAEoDSI/ChBCZWdp",
+            "bm5pbmdMZXR0ZXJzEgsKB1VOS05PV04QABIJCgVBTFBIQRABEggKBEJFVEEQ",
+            "AhIJCgVHQU1NQRADKjkKDUVuZGluZ0xldHRlcnMSCwoHVU5LTk9XThAAEgkK",
+            "BU9NRUdBEAESBwoDUFNJEAISBwoDQ0hJEANCD1oNcHJvdG8vaW50anNvbmIG",
+            "cHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Intjson.Numbers), global::Intjson.Numbers.Parser, new[]{ "Label", "Signed64", "Unsigned64", "Signed32", "Unsigned32" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Intjson.EndingLetters), }, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::Intjson.Numbers), global::Intjson.Numbers.Parser, new[]{ "Label", "Signed64", "Unsigned64", "Signed32", "Unsigned32" }, null, new[]{ typeof(global::Intjson.Numbers.Types.BeginningLetters) }, null, null)
           }));
     }
     #endregion
 
   }
+  #region Enums
+  public enum EndingLetters {
+    [pbr::OriginalName("UNKNOWN")] Unknown = 0,
+    [pbr::OriginalName("OMEGA")] Omega = 1,
+    [pbr::OriginalName("PSI")] Psi = 2,
+    [pbr::OriginalName("CHI")] Chi = 3,
+  }
+
+  #endregion
+
   #region Messages
   public sealed partial class Numbers : pb::IMessage<Numbers>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -46,19 +59,23 @@ namespace Intjson {
     private static readonly pb::MessageParser<Numbers> _parser = new pb::MessageParser<Numbers>(() => new Numbers());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<Numbers> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
       get { return global::Intjson.IntjsonReflection.Descriptor.MessageTypes[0]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     pbr::MessageDescriptor pb::IMessage.Descriptor {
       get { return Descriptor; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Numbers() {
       OnConstruction();
     }
@@ -66,6 +83,7 @@ namespace Intjson {
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Numbers(Numbers other) : this() {
       label_ = other.label_;
       signed64_ = other.signed64_;
@@ -76,6 +94,7 @@ namespace Intjson {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public Numbers Clone() {
       return new Numbers(this);
     }
@@ -84,6 +103,7 @@ namespace Intjson {
     public const int LabelFieldNumber = 1;
     private string label_ = "";
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Label {
       get { return label_; }
       set {
@@ -95,6 +115,7 @@ namespace Intjson {
     public const int Signed64FieldNumber = 2;
     private long signed64_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public long Signed64 {
       get { return signed64_; }
       set {
@@ -106,6 +127,7 @@ namespace Intjson {
     public const int Unsigned64FieldNumber = 3;
     private ulong unsigned64_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ulong Unsigned64 {
       get { return unsigned64_; }
       set {
@@ -117,6 +139,7 @@ namespace Intjson {
     public const int Signed32FieldNumber = 4;
     private int signed32_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int Signed32 {
       get { return signed32_; }
       set {
@@ -128,6 +151,7 @@ namespace Intjson {
     public const int Unsigned32FieldNumber = 5;
     private uint unsigned32_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public uint Unsigned32 {
       get { return unsigned32_; }
       set {
@@ -136,11 +160,13 @@ namespace Intjson {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
       return Equals(other as Numbers);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public bool Equals(Numbers other) {
       if (ReferenceEquals(other, null)) {
         return false;
@@ -157,6 +183,7 @@ namespace Intjson {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
       if (Label.Length != 0) hash ^= Label.GetHashCode();
@@ -171,11 +198,13 @@ namespace Intjson {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override string ToString() {
       return pb::JsonFormatter.ToDiagnosticString(this);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void WriteTo(pb::CodedOutputStream output) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
@@ -208,6 +237,7 @@ namespace Intjson {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
       if (Label.Length != 0) {
         output.WriteRawTag(10);
@@ -236,6 +266,7 @@ namespace Intjson {
     #endif
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
       if (Label.Length != 0) {
@@ -260,6 +291,7 @@ namespace Intjson {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(Numbers other) {
       if (other == null) {
         return;
@@ -283,6 +315,7 @@ namespace Intjson {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public void MergeFrom(pb::CodedInputStream input) {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       input.ReadRawMessage(this);
@@ -320,6 +353,7 @@ namespace Intjson {
 
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
       uint tag;
       while ((tag = input.ReadTag()) != 0) {
@@ -351,6 +385,21 @@ namespace Intjson {
       }
     }
     #endif
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the Numbers message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static partial class Types {
+      public enum BeginningLetters {
+        [pbr::OriginalName("UNKNOWN")] Unknown = 0,
+        [pbr::OriginalName("ALPHA")] Alpha = 1,
+        [pbr::OriginalName("BETA")] Beta = 2,
+        [pbr::OriginalName("GAMMA")] Gamma = 3,
+      }
+
+    }
+    #endregion
 
   }
 

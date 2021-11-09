@@ -14,44 +14,176 @@ public final class Intjson {
     registerAllExtensions(
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
+  /**
+   * Protobuf enum {@code intjson.EndingLetters}
+   */
+  public enum EndingLetters
+      implements com.google.protobuf.ProtocolMessageEnum {
+    /**
+     * <code>UNKNOWN = 0;</code>
+     */
+    UNKNOWN(0),
+    /**
+     * <code>OMEGA = 1;</code>
+     */
+    OMEGA(1),
+    /**
+     * <code>PSI = 2;</code>
+     */
+    PSI(2),
+    /**
+     * <code>CHI = 3;</code>
+     */
+    CHI(3),
+    UNRECOGNIZED(-1),
+    ;
+
+    /**
+     * <code>UNKNOWN = 0;</code>
+     */
+    public static final int UNKNOWN_VALUE = 0;
+    /**
+     * <code>OMEGA = 1;</code>
+     */
+    public static final int OMEGA_VALUE = 1;
+    /**
+     * <code>PSI = 2;</code>
+     */
+    public static final int PSI_VALUE = 2;
+    /**
+     * <code>CHI = 3;</code>
+     */
+    public static final int CHI_VALUE = 3;
+
+
+    public final int getNumber() {
+      if (this == UNRECOGNIZED) {
+        throw new java.lang.IllegalArgumentException(
+            "Can't get the number of an unknown enum value.");
+      }
+      return value;
+    }
+
+    /**
+     * @param value The numeric wire value of the corresponding enum entry.
+     * @return The enum associated with the given numeric wire value.
+     * @deprecated Use {@link #forNumber(int)} instead.
+     */
+    @java.lang.Deprecated
+    public static EndingLetters valueOf(int value) {
+      return forNumber(value);
+    }
+
+    /**
+     * @param value The numeric wire value of the corresponding enum entry.
+     * @return The enum associated with the given numeric wire value.
+     */
+    public static EndingLetters forNumber(int value) {
+      switch (value) {
+        case 0: return UNKNOWN;
+        case 1: return OMEGA;
+        case 2: return PSI;
+        case 3: return CHI;
+        default: return null;
+      }
+    }
+
+    public static com.google.protobuf.Internal.EnumLiteMap<EndingLetters>
+        internalGetValueMap() {
+      return internalValueMap;
+    }
+    private static final com.google.protobuf.Internal.EnumLiteMap<
+        EndingLetters> internalValueMap =
+          new com.google.protobuf.Internal.EnumLiteMap<EndingLetters>() {
+            public EndingLetters findValueByNumber(int number) {
+              return EndingLetters.forNumber(number);
+            }
+          };
+
+    public final com.google.protobuf.Descriptors.EnumValueDescriptor
+        getValueDescriptor() {
+      if (this == UNRECOGNIZED) {
+        throw new java.lang.IllegalStateException(
+            "Can't get the descriptor of an unrecognized enum value.");
+      }
+      return getDescriptor().getValues().get(ordinal());
+    }
+    public final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptorForType() {
+      return getDescriptor();
+    }
+    public static final com.google.protobuf.Descriptors.EnumDescriptor
+        getDescriptor() {
+      return intjson.Intjson.getDescriptor().getEnumTypes().get(0);
+    }
+
+    private static final EndingLetters[] VALUES = values();
+
+    public static EndingLetters valueOf(
+        com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+      if (desc.getType() != getDescriptor()) {
+        throw new java.lang.IllegalArgumentException(
+          "EnumValueDescriptor is not for this type.");
+      }
+      if (desc.getIndex() == -1) {
+        return UNRECOGNIZED;
+      }
+      return VALUES[desc.getIndex()];
+    }
+
+    private final int value;
+
+    private EndingLetters(int value) {
+      this.value = value;
+    }
+
+    // @@protoc_insertion_point(enum_scope:intjson.EndingLetters)
+  }
+
   public interface NumbersOrBuilder extends
       // @@protoc_insertion_point(interface_extends:intjson.Numbers)
       com.google.protobuf.MessageOrBuilder {
 
     /**
      * <code>string label = 1;</code>
+     * @return The label.
      */
     java.lang.String getLabel();
     /**
      * <code>string label = 1;</code>
+     * @return The bytes for label.
      */
     com.google.protobuf.ByteString
         getLabelBytes();
 
     /**
      * <code>int64 signed64 = 2;</code>
+     * @return The signed64.
      */
     long getSigned64();
 
     /**
      * <code>uint64 unsigned64 = 3;</code>
+     * @return The unsigned64.
      */
     long getUnsigned64();
 
     /**
      * <code>int32 signed32 = 4;</code>
+     * @return The signed32.
      */
     int getSigned32();
 
     /**
      * <code>uint32 unsigned32 = 5;</code>
+     * @return The unsigned32.
      */
     int getUnsigned32();
   }
   /**
    * Protobuf type {@code intjson.Numbers}
    */
-  public  static final class Numbers extends
+  public static final class Numbers extends
       com.google.protobuf.GeneratedMessageV3 implements
       // @@protoc_insertion_point(message_implements:intjson.Numbers)
       NumbersOrBuilder {
@@ -152,11 +284,139 @@ public final class Intjson {
               intjson.Intjson.Numbers.class, intjson.Intjson.Numbers.Builder.class);
     }
 
+    /**
+     * Protobuf enum {@code intjson.Numbers.BeginningLetters}
+     */
+    public enum BeginningLetters
+        implements com.google.protobuf.ProtocolMessageEnum {
+      /**
+       * <code>UNKNOWN = 0;</code>
+       */
+      UNKNOWN(0),
+      /**
+       * <code>ALPHA = 1;</code>
+       */
+      ALPHA(1),
+      /**
+       * <code>BETA = 2;</code>
+       */
+      BETA(2),
+      /**
+       * <code>GAMMA = 3;</code>
+       */
+      GAMMA(3),
+      UNRECOGNIZED(-1),
+      ;
+
+      /**
+       * <code>UNKNOWN = 0;</code>
+       */
+      public static final int UNKNOWN_VALUE = 0;
+      /**
+       * <code>ALPHA = 1;</code>
+       */
+      public static final int ALPHA_VALUE = 1;
+      /**
+       * <code>BETA = 2;</code>
+       */
+      public static final int BETA_VALUE = 2;
+      /**
+       * <code>GAMMA = 3;</code>
+       */
+      public static final int GAMMA_VALUE = 3;
+
+
+      public final int getNumber() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalArgumentException(
+              "Can't get the number of an unknown enum value.");
+        }
+        return value;
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static BeginningLetters valueOf(int value) {
+        return forNumber(value);
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       */
+      public static BeginningLetters forNumber(int value) {
+        switch (value) {
+          case 0: return UNKNOWN;
+          case 1: return ALPHA;
+          case 2: return BETA;
+          case 3: return GAMMA;
+          default: return null;
+        }
+      }
+
+      public static com.google.protobuf.Internal.EnumLiteMap<BeginningLetters>
+          internalGetValueMap() {
+        return internalValueMap;
+      }
+      private static final com.google.protobuf.Internal.EnumLiteMap<
+          BeginningLetters> internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<BeginningLetters>() {
+              public BeginningLetters findValueByNumber(int number) {
+                return BeginningLetters.forNumber(number);
+              }
+            };
+
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor
+          getValueDescriptor() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalStateException(
+              "Can't get the descriptor of an unrecognized enum value.");
+        }
+        return getDescriptor().getValues().get(ordinal());
+      }
+      public final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptorForType() {
+        return getDescriptor();
+      }
+      public static final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptor() {
+        return intjson.Intjson.Numbers.getDescriptor().getEnumTypes().get(0);
+      }
+
+      private static final BeginningLetters[] VALUES = values();
+
+      public static BeginningLetters valueOf(
+          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException(
+            "EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+          return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+      }
+
+      private final int value;
+
+      private BeginningLetters(int value) {
+        this.value = value;
+      }
+
+      // @@protoc_insertion_point(enum_scope:intjson.Numbers.BeginningLetters)
+    }
+
     public static final int LABEL_FIELD_NUMBER = 1;
     private volatile java.lang.Object label_;
     /**
      * <code>string label = 1;</code>
+     * @return The label.
      */
+    @java.lang.Override
     public java.lang.String getLabel() {
       java.lang.Object ref = label_;
       if (ref instanceof java.lang.String) {
@@ -171,7 +431,9 @@ public final class Intjson {
     }
     /**
      * <code>string label = 1;</code>
+     * @return The bytes for label.
      */
+    @java.lang.Override
     public com.google.protobuf.ByteString
         getLabelBytes() {
       java.lang.Object ref = label_;
@@ -190,7 +452,9 @@ public final class Intjson {
     private long signed64_;
     /**
      * <code>int64 signed64 = 2;</code>
+     * @return The signed64.
      */
+    @java.lang.Override
     public long getSigned64() {
       return signed64_;
     }
@@ -199,7 +463,9 @@ public final class Intjson {
     private long unsigned64_;
     /**
      * <code>uint64 unsigned64 = 3;</code>
+     * @return The unsigned64.
      */
+    @java.lang.Override
     public long getUnsigned64() {
       return unsigned64_;
     }
@@ -208,7 +474,9 @@ public final class Intjson {
     private int signed32_;
     /**
      * <code>int32 signed32 = 4;</code>
+     * @return The signed32.
      */
+    @java.lang.Override
     public int getSigned32() {
       return signed32_;
     }
@@ -217,7 +485,9 @@ public final class Intjson {
     private int unsigned32_;
     /**
      * <code>uint32 unsigned32 = 5;</code>
+     * @return The unsigned32.
      */
+    @java.lang.Override
     public int getUnsigned32() {
       return unsigned32_;
     }
@@ -597,6 +867,7 @@ public final class Intjson {
       private java.lang.Object label_ = "";
       /**
        * <code>string label = 1;</code>
+       * @return The label.
        */
       public java.lang.String getLabel() {
         java.lang.Object ref = label_;
@@ -612,6 +883,7 @@ public final class Intjson {
       }
       /**
        * <code>string label = 1;</code>
+       * @return The bytes for label.
        */
       public com.google.protobuf.ByteString
           getLabelBytes() {
@@ -628,6 +900,8 @@ public final class Intjson {
       }
       /**
        * <code>string label = 1;</code>
+       * @param value The label to set.
+       * @return This builder for chaining.
        */
       public Builder setLabel(
           java.lang.String value) {
@@ -641,6 +915,7 @@ public final class Intjson {
       }
       /**
        * <code>string label = 1;</code>
+       * @return This builder for chaining.
        */
       public Builder clearLabel() {
         
@@ -650,6 +925,8 @@ public final class Intjson {
       }
       /**
        * <code>string label = 1;</code>
+       * @param value The bytes for label to set.
+       * @return This builder for chaining.
        */
       public Builder setLabelBytes(
           com.google.protobuf.ByteString value) {
@@ -666,12 +943,16 @@ public final class Intjson {
       private long signed64_ ;
       /**
        * <code>int64 signed64 = 2;</code>
+       * @return The signed64.
        */
+      @java.lang.Override
       public long getSigned64() {
         return signed64_;
       }
       /**
        * <code>int64 signed64 = 2;</code>
+       * @param value The signed64 to set.
+       * @return This builder for chaining.
        */
       public Builder setSigned64(long value) {
         
@@ -681,6 +962,7 @@ public final class Intjson {
       }
       /**
        * <code>int64 signed64 = 2;</code>
+       * @return This builder for chaining.
        */
       public Builder clearSigned64() {
         
@@ -692,12 +974,16 @@ public final class Intjson {
       private long unsigned64_ ;
       /**
        * <code>uint64 unsigned64 = 3;</code>
+       * @return The unsigned64.
        */
+      @java.lang.Override
       public long getUnsigned64() {
         return unsigned64_;
       }
       /**
        * <code>uint64 unsigned64 = 3;</code>
+       * @param value The unsigned64 to set.
+       * @return This builder for chaining.
        */
       public Builder setUnsigned64(long value) {
         
@@ -707,6 +993,7 @@ public final class Intjson {
       }
       /**
        * <code>uint64 unsigned64 = 3;</code>
+       * @return This builder for chaining.
        */
       public Builder clearUnsigned64() {
         
@@ -718,12 +1005,16 @@ public final class Intjson {
       private int signed32_ ;
       /**
        * <code>int32 signed32 = 4;</code>
+       * @return The signed32.
        */
+      @java.lang.Override
       public int getSigned32() {
         return signed32_;
       }
       /**
        * <code>int32 signed32 = 4;</code>
+       * @param value The signed32 to set.
+       * @return This builder for chaining.
        */
       public Builder setSigned32(int value) {
         
@@ -733,6 +1024,7 @@ public final class Intjson {
       }
       /**
        * <code>int32 signed32 = 4;</code>
+       * @return This builder for chaining.
        */
       public Builder clearSigned32() {
         
@@ -744,12 +1036,16 @@ public final class Intjson {
       private int unsigned32_ ;
       /**
        * <code>uint32 unsigned32 = 5;</code>
+       * @return The unsigned32.
        */
+      @java.lang.Override
       public int getUnsigned32() {
         return unsigned32_;
       }
       /**
        * <code>uint32 unsigned32 = 5;</code>
+       * @param value The unsigned32 to set.
+       * @return This builder for chaining.
        */
       public Builder setUnsigned32(int value) {
         
@@ -759,6 +1055,7 @@ public final class Intjson {
       }
       /**
        * <code>uint32 unsigned32 = 5;</code>
+       * @return This builder for chaining.
        */
       public Builder clearUnsigned32() {
         
@@ -833,10 +1130,13 @@ public final class Intjson {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\rintjson.proto\022\007intjson\"d\n\007Numbers\022\r\n\005l" +
-      "abel\030\001 \001(\t\022\020\n\010signed64\030\002 \001(\003\022\022\n\nunsigned" +
-      "64\030\003 \001(\004\022\020\n\010signed32\030\004 \001(\005\022\022\n\nunsigned32" +
-      "\030\005 \001(\rB\017Z\rproto/intjsonb\006proto3"
+      "\n\rintjson.proto\022\007intjson\"\245\001\n\007Numbers\022\r\n\005" +
+      "label\030\001 \001(\t\022\020\n\010signed64\030\002 \001(\003\022\022\n\nunsigne" +
+      "d64\030\003 \001(\004\022\020\n\010signed32\030\004 \001(\005\022\022\n\nunsigned3" +
+      "2\030\005 \001(\r\"?\n\020BeginningLetters\022\013\n\007UNKNOWN\020\000" +
+      "\022\t\n\005ALPHA\020\001\022\010\n\004BETA\020\002\022\t\n\005GAMMA\020\003*9\n\rEndi" +
+      "ngLetters\022\013\n\007UNKNOWN\020\000\022\t\n\005OMEGA\020\001\022\007\n\003PSI" +
+      "\020\002\022\007\n\003CHI\020\003B\017Z\rproto/intjsonb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
