@@ -7,7 +7,7 @@ This repo checks that (u)int64s are encoded correctly into JSON. As explained in
 
 Run `cd proto && ./generate.sh` to generate the protobuf stubs for your language. Then go to your language directory to run the code.
 
-## Results
+## Results: int encoding
 
 ### Expectation
 
@@ -23,6 +23,27 @@ Run `cd proto && ./generate.sh` to generate the protobuf stubs for your language
  - C#: PASSED (tested here `(cd csharp && dotnet build && dotnet ./bin/Debug/netstandard2.0/csharp.dll)`)
  - Ruby: PASSED (tested here `ruby ./ruby/main.rb`)
 
+
+
+## Results: unused enum types
+### Expectation
+protoc generates code for both the top-level and nested enum types, even though neither is used as a field type. The languages tested all seem to do that, as indicated by `GENERATED` below.
+
+### By Language
+  - Go: GENERATED
+    - string from enum: `EndingLetters_OMEGA.String()`
+    - enum from string: `EndingLetters_value["OMEGA"]`
+  - Java: GENERATED
+    - string from enum ([ref](https://stackoverflow.com/a/17741770)): `EndingLetters.name(EndingLetters.OMEGA)`
+    - enum from string ([ref](https://stackoverflow.com/a/604426)): `EndingLetters.valueOf("OMEGA")`
+  - C#: GENERATED
+  - Python: GENERATED
+    - string from enum and enum from string can beaccessed through ProtoPlus
+  - Ruby: GENERATED
+  - PHP: GENERATED
+    - string from enum: `name(...)`
+    - enum from string: `value(...)`
+  - JavaScript: GENERATED
 
 ## Contributing
 
